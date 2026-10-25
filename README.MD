@@ -1,139 +1,189 @@
 DSA SUBMISSIONS 2026
+Navnoor Kaur Dhillon · Roll No. UEM253141 · CSE Sec 2 · Data Structures Lab (CS-251)
+Experiment 1: Single Linked List
+Description: A linear data structure in which every node stores data and a pointer to the next node. This program inserts at the head, tail, before a value and after a value, and displays the list.
+Test Cases:
+• Input: Insert 10, 20, 30 at tail; insert 15 before 20; insert 25 after 20
+• Output: 10 -> 15 -> 20 -> 25 -> 30 -> NULL
+Time Complexity:
+• Access / Search: O(n)
+• Insert / Delete at head: O(1)
+• Insert / Delete at tail or middle: O(n)
+Space Complexity: O(n) for n nodes; O(1) extra space per operation
 
-1. Linked Lists
+Experiment 2: Doubly Linked List
+Description: An extension of the singly linked list where each node holds data, a next pointer and a previous pointer, so the list can be traversed in both directions. Supports insertion and deletion at the beginning, end, a position or a value.
+Test Cases:
+• Input: Insert 10, 20 at end; 5 at beginning; 15 at position 3; delete front, end, then value 15
+• Output: 5 <-> 10 <-> 15 <-> 20 <-> NULL, then 10 <-> 15 <-> 20, then 10 <-> 15, then 10 <-> NULL
+Time Complexity:
+• Access / Search: O(n)
+• Insert / Delete at head or tail (head and tail pointers kept): O(1)
+• Delete a given value: O(n)
+Space Complexity: O(n) for n nodes (extra prev pointer per node); O(1) extra per operation
 
+Experiment 3: Stack using Array
+Description: A Last-In-First-Out (LIFO) structure where insertion and deletion happen at the same end (top). Implemented with a fixed-size array of 100 elements and an integer top index.
+Test Cases:
+• Input: Push 10, 20, 30; peek; pop; peek
+• Output: Top element is: 30, Popped: 30, Top element after pop is: 20
+Time Complexity:
+• Push / Pop / Peek / isEmpty: O(1)
+Space Complexity: O(n) for the array of size MAX_SIZE; O(1) extra per operation
 
-Single Linked List
+Experiment 4: Stack using Linked List
+Description: A LIFO stack built from dynamically allocated nodes. The top pointer always refers to the most recently pushed node, so the stack grows and shrinks without a fixed size limit.
+Test Cases:
+• Input: Push 100, 200, 300; peek; pop; peek; pop all remaining
+• Output: Top element is: 300, Popped: 300, Top element after pop is: 200, Popped: 200, Popped: 100
+Time Complexity:
+• Push / Pop / Peek / isEmpty: O(1)
+Space Complexity: O(n) for n nodes; O(1) extra per operation
 
-• Description: A linear data structure where elements (nodes) are linked using pointers. Each node contains data and a pointer to the next node.
-• Time Complexity:
-	• Access / Search: \(O(n)\)
-	• Insertion / Deletion (at head): \(O(1)\)
-	• Insertion / Deletion (at tail/middle): \(O(n)\)
-• Test Case:
-	• Input: Insert 10, Insert 20, Insert 30, Delete 20
-	• Output: 10 -> 30 -> NULL
+Experiment 5: Queue using Array
+Description: A First-In-First-Out (FIFO) structure where elements are inserted at the rear and removed from the front. With a linear array the slots freed at the front are not reused until the queue becomes empty (memory wastage).
+Test Cases:
+• Input: Enqueue 10, 20, 30; display; dequeue; display
+• Output: 10 20 30, Dequeued: 10, 20 30
+Time Complexity:
+• Enqueue / Dequeue: O(1)
+• Display: O(n)
+Space Complexity: O(n) for the array of size MAX_SIZE; O(1) extra per operation 
 
-Doubly Linked List
+Experiment 6: Circular Queue using Array
+Description: A FIFO structure that reuses emptied array slots by wrapping the front and rear indices around the end of the array, which removes the wastage of a linear array queue.
+Test Cases:
+• Input: Size = 5. Enqueue 10, 20, 30, 40; dequeue twice; enqueue 50, 60
+• Output: 10 20 30 40, Dequeued: 10, Dequeued: 20, 30 40 50 60 (50 and 60 wrap around to index 0)
+Time Complexity:
+• Enqueue / Dequeue: O(1)
+• Display: O(n)
+Space Complexity: O(n) for the array of size SIZE; O(1) extra per operation
 
-• Description: An extension of the singly linked list where each node contains data and two pointers: one pointing to the next node and one to the previous node.
-• Time Complexity:
-	• Access / Search: \(O(n)\)
-	• Insertion / Deletion (at head/tail with pointer): \(O(1)\)
-• Test Case:
-	• Input: Insert 5 at head, Insert 15 at tail, Traverse Forward & Backward
-	• Output: Forward: 5 <-> 15 -> NULL, Backward: 15 <-> 5 -> NULL
+Experiment 7: Queue using Linked List
+Description: A dynamic FIFO queue that grows and shrinks at run time using a front pointer (for removal) and a rear pointer (for insertion).
+Test Cases:
+• Input: Enqueue 10, 20, 30; peek; dequeue; dequeue all remaining
+• Output: 10 -> 20 -> 30 -> NULL, Front element is: 10, Dequeued: 10, 20 -> 30 -> NULL
+Time Complexity:
+• Enqueue / Dequeue / Peek: O(1)
+• Display: O(n)
+Space Complexity: O(n) for n nodes; O(1) extra per operation
 
-2. Stacks & Queues
+Experiment 8: Merge Sort
+Description: A divide-and-conquer, stable comparison sort. The array is split recursively into halves, each half is sorted, and the two sorted halves are merged using a temporary array.
+Test Cases:
+• Input: [30, 12, 9, 55, 23, 77, 11, 90]
+• Output: [9, 11, 12, 23, 30, 55, 77, 90]
+Time Complexity:
+• Best: O(n log n)
+• Average: O(n log n)
+• Worst: O(n log n)
+Space Complexity: O(n) auxiliary array for merging (plus O(log n) recursion stack)
 
+Experiment 9: Quick Sort
+Description: A divide-and-conquer comparison sort. The first element is taken as pivot, the array is partitioned so smaller elements lie left of the pivot and larger ones right, and both parts are sorted recursively. Not stable.
+Test Cases:
+• Input: [30, 12, 9, 55, 23, 77, 11, 90]
+• Output: [9, 11, 12, 23, 30, 55, 77, 90]
+Time Complexity:
+• Best: O(n log n)
+• Average: O(n log n)
+• Worst: O(n^2) (already sorted input with first-element pivot)
+Space Complexity: O(log n) recursion stack on average; O(n) in the worst case
 
-Stacks (Array & Linked List Implementation)
+Experiment 10: Radix Sort
+Description: A non-comparison sort that sorts numbers digit by digit, from the least significant digit to the most significant, using a stable counting sort for each digit.
+Test Cases:
+• Input: [170, 45, 75, 90, 802, 24, 2, 66]
+• Output: [2, 24, 45, 66, 75, 90, 170, 802]
+Time Complexity:
+• Best / Average / Worst: O(d * (n + k)), where d = number of digits and k = base (10)
+Space Complexity: O(n + k) for the output and count arrays
 
-• Description: A Last-In-First-Out (LIFO) data structure where insertions and deletions happen at the same end (top).
-• Time Complexity:
-	• Push / Pop / Peek: \(O(1)\)
-• Test Case:
-	• Input: Push 10, Push 20, Pop()
-	• Output: Popped: 20, Top element remaining: 10
+Experiment 11: Heap Sort
+Description: A comparison sort that first builds a max-heap from the array and then repeatedly swaps the root (largest element) with the last element of the heap and restores the heap property. In-place and not stable.
+Test Cases:
+• Input: [38, 27, 43, 3, 9, 82, 10]
+• Output: [3, 9, 10, 27, 38, 43, 82]
+Time Complexity:
+• Best: O(n log n)
+• Average: O(n log n)
+• Worst: O(n log n)
+Space Complexity: O(1) auxiliary space (in-place; O(log n) for recursive heapify)
 
-Queue with Array
+Experiment 12: Bucket Sort
+Description: A non-comparison sort that distributes elements into buckets by range (value / 10 here), sorts every bucket individually, and then concatenates the buckets in order.
+Test Cases:
+• Input: [42, 32, 33, 52, 37, 47, 51]
+• Output: [32, 33, 37, 42, 47, 51, 52]
+Time Complexity:
+• Best: O(n + k)
+• Average: O(n + k)
+• Worst: O(n^2) (all elements fall in one bucket)
+Space Complexity: O(n + k) for the buckets
 
-• Description: A First-In-First-Out (FIFO) data structure where elements are inserted at the rear and removed from the front. Suffers from memory wastage after deletions.
-• Time Complexity:
-	• Enqueue / Dequeue: \(O(1)\)
-• Test Case:
-	• Input: Enqueue 1, Enqueue 2, Dequeue()
-	• Output: Dequeued: 1, Front element remaining: 2
+Experiment 13: K Smallest Elements (Partitioning)
+Description: Uses the QuickSort partition step (quick-select) to bring the k smallest elements to the front of the array without sorting the whole array. Only the side of the pivot that contains position k is processed further.
+Test Cases:
+• Input: Array = [3, 2, 10, 5, 4, 7, 8, 9, 1, 6, 15, 11], k = 8
+• Output: 8 smallest elements: 1 2 3 4 5 6 7 8
+Time Complexity:
+• Average: O(n)
+• Worst: O(n^2)
+Space Complexity: O(1) auxiliary space (iterative, in-place)
 
-Circular Queue with Array
+Experiment 14: Bin Sort
+Description: A non-comparison sort in which every possible value has its own bin. Each element is dropped into its bin (count incremented), and the bins are then read back in increasing order. Works for integers in a known range.
+Test Cases:
+• Input: [38, 27, 43, 3, 9, 82, 10], values in range 0 to 99
+• Output: [3, 9, 10, 27, 38, 43, 82]
+Time Complexity:
+• Best / Average / Worst: O(n + k), where k = range of values
+Space Complexity: O(k) for the bins
 
-• Description: A FIFO structure optimized to reuse emptied memory slots by wrapping around the end of the array using modulo arithmetic.
-• Time Complexity:
-	• Enqueue / Dequeue: \(O(1)\)
-• Test Case:
-	• Input: Size=3. Enqueue A, Enqueue B, Enqueue C, Dequeue(), Enqueue D
-	• Output: Successfully inserted D at index 0 without overflow.
+Experiment 15: Tower of Hanoi
+Description: A classic recursive puzzle: move n disks from the source rod to the destination rod using an auxiliary rod, never placing a larger disk on a smaller one. Solution: move n-1 disks aside, move the largest disk, then move the n-1 disks on top of it.
+Test Cases:
+• Input: n = 3 disks (A = source, B = helper, C = destination)
+• Output: 7 moves: disk 1 A->C, disk 2 A->B, disk 1 C->B, disk 3 A->C, disk 1 B->A, disk 2 B->C, disk 1 A->C
+Time Complexity:
+• O(2^n); exactly 2^n - 1 moves
+Space Complexity: O(n) recursion stack depth
+Experiment 16: Binary Trees
+Description: A hierarchical structure in which every node has at most two children (left and right). The tree is built recursively from user input, and the Preorder, Inorder and Postorder traversals are displayed.
+Test Cases:
+• Input: Root 1, left child 2, right child 3
+• Output: Preorder: 1 2 3, Inorder: 2 1 3, Postorder: 2 3 1
+Time Complexity:
+• Creation / each traversal: O(n)
+Space Complexity: O(n) for n nodes; O(h) recursion stack, h = height of the tree
 
-Queue using Linked List
+Experiment 17: Binary Search Tree (BST)
+Description: A binary tree in which the left subtree holds values smaller than the node and the right subtree holds larger values. The program starts with root 10, inserts user-entered values, prints the inorder (sorted) sequence and searches for a value.
+Test Cases:
+• Input: Root 10 (preset); insert 50, 30, 70, 20, 40; search 40
+• Output: Inorder: 10 20 30 40 50 70; found!!
+Time Complexity:
+• Search / Insert: Average O(log n), Worst O(n)
+• Inorder traversal: O(n)
+Space Complexity: O(n) for n nodes; O(h) recursion stack
 
-• Description: A dynamic FIFO structure that grows and shrinks dynamically using head (front) and tail (rear) pointers.
-• Time Complexity:
-	• Enqueue / Dequeue: \(O(1)\)
-• Test Case:
-	• Input: Enqueue 100, Enqueue 200, Dequeue()
-	• Output: Dequeued: 100
+Experiment 18: AVL Trees (AVL Check using Balance Factor)
+Description: An AVL tree is a self-balancing BST in which the balance factor (height of left subtree minus height of right subtree) of every node is -1, 0 or 1. This program computes node heights and checks the balance factor of every node recursively to decide whether a tree is an AVL tree.
+Test Cases:
+• Input: Tree: 30 (root), left 20, right 40, 10 as left child of 20
+• Output: Tree is AVL
+Time Complexity:
+• AVL search / insert / delete: always O(log n)
+• isAVL check as written (recomputes heights): O(n^2) worst case
+Space Complexity: O(n) for the nodes; O(h) recursion stack
 
-Parenthesis Matching
-
-• Description: An application of stack to check if an expression has balanced opening and closing brackets.
-• Time Complexity: \(O(n)\)
-• Test Case:
-	• Input: {[()]}
-	• Output: Balanced
-	• Input: [(])
-	• Output: Not Balanced
-
-3. Sorting Algorithms
-
-
-Algorithm	Best Case	Average Case	Worst Case	Space Complexity	Type
-Merge Sort	\(O(n \log n)\)	\(O(n \log n)\)	\(O(n \log n)\)	\(O(n)\)	Comparison, Stable
-Quick Sort	\(O(n \log n)\)	\(O(n \log n)\)	\(O(n^2)\)	\(O(\log n)\)	Comparison, Unstable
-Heap Sort	\(O(n \log n)\)	\(O(n \log n)\)	\(O(n \log n)\)	\(O(1)\)	Comparison, Unstable
-Radix Sort	\(O(d \cdot (n + k))\)	\(O(d \cdot (n + k))\)	\(O(d \cdot (n + k))\)	\(O(n + k)\)	Non-comparison
-Bucket Sort	\(O(n + k)\)	\(O(n)\)	\(O(n^2)\)	\(O(n + k)\)	Non-comparison
-Bin / Count Sort	\(O(n + k)\)	\(O(n + k)\)	\(O(n + k)\)	\(O(k)\)	Non-comparison
-
-
-Sorting Test Cases (Applicable to all sorting algorithms)
-
-• Test Case:
-	• Input: [38, 27, 43, 3, 9, 82, 10]
-	• Output: [3, 9, 10, 27, 38, 43, 82]
-
-4. Advanced Topics & Trees
-
-
-K-Smallest Element (Partitioning / QuickSelect)
-
-• Description: Finds the \(k\)-th smallest element in an unsorted array using the QuickSort partitioning logic without sorting the entire array.
-• Time Complexity: Average: \(O(n)\), Worst: \(O(n^2)\)
-• Test Case:
-	• Input: Array = [7, 10, 4, 3, 20, 15], \(k = 3\)
-	• Output: 7 (3rd smallest element)
-
-Tower of Hanoi
-
-• Description: A classic mathematical puzzle solved using recursion, moving a stack of disks from a source rod to a destination rod using an auxiliary rod.
-• Time Complexity: \(O(2^n)\)
-• Test Case:
-	• Input: \(n = 2\) disks (Source=A, Helper=B, Destination=C)
-	• Output:text
-Move disk 1 from A to B
-Move disk 2 from A to C
-Move disk 1 from B to C
-Use code with caution.
-
-Binary Trees
-
-• Description: A hierarchical structure where each node has at most two children (left and right). Supports traversals: Inorder, Preorder, Postorder.
-• Time Complexity: Traversals take \(O(n)\)
-• Test Case:
-	• Input: Tree with root 1, left child 2, right child 3
-	• Output: Inorder Traversal: 2 -> 1 -> 3
-
-Binary Search Tree (BST)
-
-• Description: A binary tree where the left subtree contains values less than the root, and the right subtree contains values greater than the root.
-• Time Complexity: Access / Search / Insertion: Average \(O(\log n)\), Worst \(O(n)\)
-• Test Case:
-	• Input: Insert 50, 30, 70, 20, 40. Search 40
-	• Output: Element 40 Found
-
-AVL Trees
-
-• Description: A self-balancing Binary Search Tree where the difference between heights of left and right subtrees (Balance Factor) cannot exceed 1. Uses rotations (LL, RR, LR, RL) to balance.
-• Time Complexity: Access / Search / Insertion / Deletion: Always \(O(\log n)\)
-• Test Case:
-	• Input: Insert 10, 20, 30 (Triggers an RR rotation)
-	• Output: Root balances to 20, with left child 10 and right child 30.
+Experiment 19: Parenthesis Matching
+Description: An application of the stack that checks whether an expression has balanced brackets. Opening brackets are pushed; every closing bracket must match the bracket on top of the stack, and the stack must be empty at the end.
+Test Cases:
+• Input: {()}[] and {(})
+• Output: {()}[] is Balanced; {(}) is Not Balanced
+Time Complexity:
+• O(n) for an expression of length n
+Space Complexity: O(n) for the stack in the worst case
