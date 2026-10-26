@@ -56,7 +56,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 2: Double Linked List
 
-**Code:** [02_double_linked_list.cpp](./02_double_linked_list.cpp)
+**Code:** [DLL.cpp](./DLL.cpp)
 
 **Description:** An extension of the singly linked list where each node holds data, a next pointer and a previous pointer, so the list can be traversed in both directions. Supports insertion and deletion at the beginning, end, a position or a value.
 
@@ -78,7 +78,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 3: Stack using Array
 
-**Code:** [03_stack_using_array.cpp](./03_stack_using_array.cpp)
+**Code:** [STACKSWITHARRAY.cpp](./STACKSWITHARRAY.cpp)
 
 **Description:** A Last-In-First-Out (LIFO) structure where insertion and deletion happen at the same end (top). Implemented with a fixed-size array of 100 elements and an integer top index.
 
@@ -98,7 +98,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 4: Stack using Linked List
 
-**Code:** [04_stack_using_linked_list.cpp](./04_stack_using_linked_list.cpp)
+**Code:** [STACKSWITHLL.cpp](./STACKSWITHLL.cpp)
 
 **Description:** A LIFO stack built from dynamically allocated nodes. The top pointer always refers to the most recently pushed node, so the stack grows and shrinks without a fixed size limit.
 
@@ -118,7 +118,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 5: Queue using Array
 
-**Code:** [05_queue_using_array.cpp](./05_queue_using_array.cpp)
+**Code:** [queueusingarray.cpp](./queueusingarray.cpp)
 
 **Description:** A First-In-First-Out (FIFO) structure where elements are inserted at the rear and removed from the front. With a linear array the slots freed at the front are not reused until the queue becomes empty (memory wastage).
 
@@ -139,7 +139,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 6: Circular Queue using Array
 
-**Code:** [06_circular_queue_using_array.cpp](./06_circular_queue_using_array.cpp)
+**Code:** [circularqueueusingarray.cpp](./circularqueueusingarray.cpp)
 
 **Description:** A FIFO structure that reuses emptied array slots by wrapping the front and rear indices around the end of the array using the modulo operator, which removes the wastage of a linear array queue. The queue is empty when front = -1 and full when (rear + 1) % SIZE == front; enqueue moves rear to (rear + 1) % SIZE and dequeue moves front to (front + 1) % SIZE.
 
@@ -166,7 +166,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 7: Queue using Linked List
 
-**Code:** [07_queue_using_linked_list.cpp](./07_queue_using_linked_list.cpp)
+**Code:** [queueusingll.cpp](./queueusingll.cpp)
 
 **Description:** A dynamic FIFO queue that grows and shrinks at run time using a front pointer (for removal) and a rear pointer (for insertion).
 
@@ -187,7 +187,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 8: Merge Sort
 
-**Code:** [08_merge_sort.cpp](./08_merge_sort.cpp)
+**Code:** [mergesort.cpp](./mergesort.cpp)
 
 **Description:** A divide-and-conquer, stable comparison sort. The array is split recursively into halves, each half is sorted, and the two sorted halves are merged using a temporary array.
 
@@ -209,7 +209,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 9: Quick Sort
 
-**Code:** [09_quick_sort.cpp](./09_quick_sort.cpp)
+**Code:** [quicksort.cpp](./quicksort.cpp)
 
 **Description:** A divide-and-conquer comparison sort. The first element is taken as pivot, the array is partitioned so smaller elements lie left of the pivot and larger ones right, and both parts are sorted recursively. Not stable.
 
@@ -231,7 +231,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 10: Towers of Hanoi
 
-**Code:** [10_towers_of_hanoi.cpp](./10_towers_of_hanoi.cpp)
+**Code:** [TOH.cpp](./TOH.cpp)
 
 **Description:** A classic recursive puzzle: move n disks from the source rod to the destination rod using an auxiliary rod, never placing a larger disk on a smaller one. Solution: move n-1 disks aside, move the largest disk, then move the n-1 disks on top of it.
 
@@ -252,7 +252,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 11: Radix Sort
 
-**Code:** [11_radix_sort.cpp](./11_radix_sort.cpp)
+**Code:** [radixsort.cpp](./radixsort.cpp)
 
 **Description:** A non-comparison sort that sorts numbers digit by digit, from the least significant digit to the most significant, using a stable counting sort for each digit.
 
@@ -272,7 +272,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 12: Heap Sort
 
-**Code:** [12_heap_sort.cpp](./12_heap_sort.cpp)
+**Code:** [heapsort.cpp](./heapsort.cpp)
 
 **Description:** A comparison sort that first builds a max-heap from the array and then repeatedly swaps the root (largest element) with the last element of the heap and restores the heap property. In-place and not stable.
 
@@ -294,7 +294,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 13: Bucket Sort
 
-**Code:** [13_bucket_sort.cpp](./13_bucket_sort.cpp)
+**Code:** [bucketsort.cpp](./bucketsort.cpp)
 
 **Description:** A non-comparison sort that distributes elements into buckets by range (value / 10 here), sorts every bucket individually, and then concatenates the buckets in order.
 
@@ -316,7 +316,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 14: K Smallest Elements (Partitioning)
 
-**Code:** [14_k_smallest_elements_partitioning.cpp](./14_k_smallest_elements_partitioning.cpp)
+**Code:** [ksmallestelement.cpp](./ksmallestelement.cpp)
 
 **Description:** Uses the QuickSort partition step (quick-select) to bring the k smallest elements to the front of the array without sorting the whole array. Only the side of the pivot that contains position k is processed further.
 
@@ -337,7 +337,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 15: Bin Sort
 
-**Code:** [15_bin_sort.cpp](./15_bin_sort.cpp)
+**Code:** [binsort.cpp](./binsort.cpp)
 
 **Description:** A non-comparison sort in which every possible value has its own bin. Each element is dropped into its bin (count incremented), and the bins are then read back in increasing order. Works for integers in a known range.
 
@@ -357,7 +357,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 16: Parenthesis Matching
 
-**Code:** [16_parenthesis_matching.cpp](./16_parenthesis_matching.cpp)
+**Code:** [parenthesis.cpp](./parenthesis.cpp)
 
 **Description:** An application of the stack that checks whether an expression has balanced brackets. Opening brackets are pushed; every closing bracket must match the bracket on top of the stack, and the stack must be empty at the end.
 
@@ -377,7 +377,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 17: Binary Trees
 
-**Code:** [17_binary_trees.cpp](./17_binary_trees.cpp)
+**Code:** [binarytree.cpp](./binarytree.cpp)
 
 **Description:** A hierarchical structure in which every node has at most two children (left and right). The tree is built recursively from user input, and the Preorder, Inorder and Postorder traversals are displayed.
 
@@ -397,7 +397,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 18: Binary Search Tree (BST)
 
-**Code:** [18_binary_search_tree_bst.cpp](./18_binary_search_tree_bst.cpp)
+**Code:** [binarysearchtree.cpp](./binarysearchtree.cpp)
 
 **Description:** A binary tree in which, for every node, all values in the left subtree are smaller and all values in the right subtree are larger (duplicates are ignored). This program builds a BST with recursive insertion, searches for a key, and deletes nodes covering all three structural cases: a leaf node, a node with one child, and a node with two children (replaced by its inorder successor, the smallest value of the right subtree). The inorder traversal prints the values in sorted order after every operation.
 
@@ -430,7 +430,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 19: AVL Trees
 
-**Code:** [19_avl_trees.cpp](./19_avl_trees.cpp)
+**Code:** [avltrees.cpp](./avltrees.cpp)
 
 **Description:** An AVL tree is a self-balancing binary search tree in which the balance factor (height of left subtree minus height of right subtree) of every node is -1, 0 or 1. This program computes node heights and balance factors, checks whether a tree is AVL (isAVL), and implements AVL deletion: normal BST deletion (leaf, one child, two children using the inorder successor) followed by rebalancing on the way back up using right rotation (LL case), left rotation (RR case), and the double rotations LR and RL.
 
