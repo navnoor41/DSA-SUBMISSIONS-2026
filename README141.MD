@@ -78,7 +78,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 3: Stack using Array
 
-**Code:** [STACKSWITHARRAY.cpp](./STACKSWITHARRAY.cpp)
+**Code:** [STACKSWITHARRAY.CPP](./STACKSWITHARRAY.CPP)
 
 **Description:** A Last-In-First-Out (LIFO) structure where insertion and deletion happen at the same end (top). Implemented with a fixed-size array of 100 elements and an integer top index.
 
@@ -98,7 +98,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 4: Stack using Linked List
 
-**Code:** [STACKSWITHLL.cpp](./STACKSWITHLL.cpp)
+**Code:** [STACKSWITHLL.CPP](./STACKSWITHLL.CPP)
 
 **Description:** A LIFO stack built from dynamically allocated nodes. The top pointer always refers to the most recently pushed node, so the stack grows and shrinks without a fixed size limit.
 
@@ -118,7 +118,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 5: Queue using Array
 
-**Code:** [queueusingarray.cpp](./queueusingarray.cpp)
+**Code:** [QUEUEUSINGARRAY.CPP(./QUEUEUSINGARRAY.CPP)
 
 **Description:** A First-In-First-Out (FIFO) structure where elements are inserted at the rear and removed from the front. With a linear array the slots freed at the front are not reused until the queue becomes empty (memory wastage).
 
@@ -139,7 +139,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 6: Circular Queue using Array
 
-**Code:** [circularqueueusingarray.cpp](./circularqueueusingarray.cpp)
+**Code:** [CIRCULARQUEUEUSINGARRAY](./CIRCULARQUEUEUSINGARRAY.CPP)
 
 **Description:** A FIFO structure that reuses emptied array slots by wrapping the front and rear indices around the end of the array using the modulo operator, which removes the wastage of a linear array queue. The queue is empty when front = -1 and full when (rear + 1) % SIZE == front; enqueue moves rear to (rear + 1) % SIZE and dequeue moves front to (front + 1) % SIZE.
 
@@ -166,7 +166,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 7: Queue using Linked List
 
-**Code:** [queueusingll.cpp](./queueusingll.cpp)
+**Code:** [QUEUEUSINGLL.CPP](./QUEUEUSINGLL.CPP)
 
 **Description:** A dynamic FIFO queue that grows and shrinks at run time using a front pointer (for removal) and a rear pointer (for insertion).
 
@@ -187,7 +187,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 8: Merge Sort
 
-**Code:** [mergesort.cpp](./mergesort.cpp)
+**Code:** [MERGESORT.CPP](./MERGESORT.CPP)
 
 **Description:** A divide-and-conquer, stable comparison sort. The array is split recursively into halves, each half is sorted, and the two sorted halves are merged using a temporary array.
 
@@ -209,7 +209,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 9: Quick Sort
 
-**Code:** [quicksort.cpp](./quicksort.cpp)
+**Code:** [QUICKSORT.CPP](./QUICKSORT.CPP)
 
 **Description:** A divide-and-conquer comparison sort. The first element is taken as pivot, the array is partitioned so smaller elements lie left of the pivot and larger ones right, and both parts are sorted recursively. Not stable.
 
@@ -252,7 +252,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 11: Radix Sort
 
-**Code:** [radixsort.cpp](./radixsort.cpp)
+**Code:** [RADIXSORT.CPP](./RADIXSORT.CPP)
 
 **Description:** A non-comparison sort that sorts numbers digit by digit, from the least significant digit to the most significant, using a stable counting sort for each digit.
 
@@ -294,7 +294,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 13: Bucket Sort
 
-**Code:** [bucketsort.cpp](./bucketsort.cpp)
+**Code:** [BUCKETSORTING.CPP](./BUCKETSORTING.CPP)
 
 **Description:** A non-comparison sort that distributes elements into buckets by range (value / 10 here), sorts every bucket individually, and then concatenates the buckets in order.
 
@@ -316,7 +316,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 14: K Smallest Elements (Partitioning)
 
-**Code:** [ksmallestelement.cpp](./ksmallestelement.cpp)
+**Code:** [KSMALLESTELEMENT.CPP](./KSMALLESTELEMENT.CPP)
 
 **Description:** Uses the QuickSort partition step (quick-select) to bring the k smallest elements to the front of the array without sorting the whole array. Only the side of the pivot that contains position k is processed further.
 
@@ -357,7 +357,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 16: Parenthesis Matching
 
-**Code:** [parenthesis.cpp](./parenthesis.cpp)
+**Code:** [PARENTHESIS.CPP](./PARENTHESIS.CPP)
 
 **Description:** An application of the stack that checks whether an expression has balanced brackets. Opening brackets are pushed; every closing bracket must match the bracket on top of the stack, and the stack must be empty at the end.
 
@@ -377,7 +377,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 17: Binary Trees
 
-**Code:** [binarytree.cpp](./binarytree.cpp)
+**Code:** [BINARYTREE.CPP](./BINARYTREE.CPP)
 
 **Description:** A hierarchical structure in which every node has at most two children (left and right). The tree is built recursively from user input, and the Preorder, Inorder and Postorder traversals are displayed.
 
