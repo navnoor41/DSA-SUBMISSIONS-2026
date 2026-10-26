@@ -92,7 +92,7 @@ Time Complexity:
 • Worst: O(n^2) (already sorted input with first-element pivot)
 Space Complexity: O(log n) recursion stack on average; O(n) in the worst case
 
-Experiment 10: Radix Sort
+Experiment 11: Radix Sort
 Description: A non-comparison sort that sorts numbers digit by digit, from the least significant digit to the most significant, using a stable counting sort for each digit.
 Test Cases:
 • Input: [170, 45, 75, 90, 802, 24, 2, 66]
@@ -101,7 +101,7 @@ Time Complexity:
 • Best / Average / Worst: O(d * (n + k)), where d = number of digits and k = base (10)
 Space Complexity: O(n + k) for the output and count arrays
 
-Experiment 11: Heap Sort
+Experiment 12: Heap Sort
 Description: A comparison sort that first builds a max-heap from the array and then repeatedly swaps the root (largest element) with the last element of the heap and restores the heap property. In-place and not stable.
 Test Cases:
 • Input: [38, 27, 43, 3, 9, 82, 10]
@@ -112,7 +112,7 @@ Time Complexity:
 • Worst: O(n log n)
 Space Complexity: O(1) auxiliary space (in-place; O(log n) for recursive heapify)
 
-Experiment 12: Bucket Sort
+Experiment 13: Bucket Sort
 Description: A non-comparison sort that distributes elements into buckets by range (value / 10 here), sorts every bucket individually, and then concatenates the buckets in order.
 Test Cases:
 • Input: [42, 32, 33, 52, 37, 47, 51]
@@ -123,7 +123,7 @@ Time Complexity:
 • Worst: O(n^2) (all elements fall in one bucket)
 Space Complexity: O(n + k) for the buckets
 
-Experiment 13: K Smallest Elements (Partitioning)
+Experiment 14: K Smallest Elements (Partitioning)
 Description: Uses the QuickSort partition step (quick-select) to bring the k smallest elements to the front of the array without sorting the whole array. Only the side of the pivot that contains position k is processed further.
 Test Cases:
 • Input: Array = [3, 2, 10, 5, 4, 7, 8, 9, 1, 6, 15, 11], k = 8
@@ -133,7 +133,7 @@ Time Complexity:
 • Worst: O(n^2)
 Space Complexity: O(1) auxiliary space (iterative, in-place)
 
-Experiment 14: Bin Sort
+Experiment 15: Bin Sort
 Description: A non-comparison sort in which every possible value has its own bin. Each element is dropped into its bin (count incremented), and the bins are then read back in increasing order. Works for integers in a known range.
 Test Cases:
 • Input: [38, 27, 43, 3, 9, 82, 10], values in range 0 to 99
@@ -142,7 +142,7 @@ Time Complexity:
 • Best / Average / Worst: O(n + k), where k = range of values
 Space Complexity: O(k) for the bins
 
-Experiment 15: Tower of Hanoi
+Experiment 10: Tower of Hanoi
 Description: A classic recursive puzzle: move n disks from the source rod to the destination rod using an auxiliary rod, never placing a larger disk on a smaller one. Solution: move n-1 disks aside, move the largest disk, then move the n-1 disks on top of it.
 Test Cases:
 • Input: n = 3 disks (A = source, B = helper, C = destination)
@@ -159,7 +159,7 @@ Time Complexity:
 • Creation / each traversal: O(n)
 Space Complexity: O(n) for n nodes; O(h) recursion stack, h = height of the tree
 
-Experiment 17: Binary Search Tree (BST)
+Experiment 18: Binary Search Tree (BST)
 Description: A binary tree in which the left subtree holds values smaller than the node and the right subtree holds larger values. The program starts with root 10, inserts user-entered values, prints the inorder (sorted) sequence and searches for a value.
 Test Cases:
 • Input: Root 10 (preset); insert 50, 30, 70, 20, 40; search 40
@@ -169,7 +169,7 @@ Time Complexity:
 • Inorder traversal: O(n)
 Space Complexity: O(n) for n nodes; O(h) recursion stack
 
-Experiment 18: AVL Trees (AVL Check using Balance Factor)
+Experiment 19: AVL Trees (AVL Check using Balance Factor)
 Description: An AVL tree is a self-balancing BST in which the balance factor (height of left subtree minus height of right subtree) of every node is -1, 0 or 1. This program computes node heights and checks the balance factor of every node recursively to decide whether a tree is an AVL tree.
 Test Cases:
 • Input: Tree: 30 (root), left 20, right 40, 10 as left child of 20
@@ -179,7 +179,7 @@ Time Complexity:
 • isAVL check as written (recomputes heights): O(n^2) worst case
 Space Complexity: O(n) for the nodes; O(h) recursion stack
 
-Experiment 19: Parenthesis Matching
+Experiment 16: Parenthesis Matching
 Description: An application of the stack that checks whether an expression has balanced brackets. Opening brackets are pushed; every closing bracket must match the bracket on top of the stack, and the stack must be empty at the end.
 Test Cases:
 • Input: {()}[] and {(})
@@ -187,3 +187,12 @@ Test Cases:
 Time Complexity:
 • O(n) for an expression of length n
 Space Complexity: O(n) for the stack in the worst case
+EXPERIMENT 17 
+Read Me
+Description: A hierarchical structure in which every node has at most two children (left and right). The tree is built recursively from user input, and the Preorder, Inorder and Postorder traversals are displayed.
+Test Cases
+Test 1 - Input: Root 1, left child 2, right child 3   Output: Preorder: 1 2 3, Inorder: 2 1 3, Postorder: 2 3 1
+Time Complexity: Creation / each traversal: O(n)
+Space Complexity: O(n) for n nodes; O(h) recursion stack, h = height of the tree
+Code
+
