@@ -118,7 +118,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 5: Queue using Array
 
-**Code:** [queusarr.cpp(./queusarr.cpp)
+**Code:** [queusarr.cpp](./queusarr.cpp)
 
 **Description:** A First-In-First-Out (FIFO) structure where elements are inserted at the rear and removed from the front. With a linear array the slots freed at the front are not reused until the queue becomes empty (memory wastage).
 
