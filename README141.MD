@@ -56,7 +56,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 2: Double Linked List
 
-**Code:** [DLL.cpp](./DLL.cpp)
+**Code:** [DLL.CPP](./DLL.CPP)
 
 **Description:** An extension of the singly linked list where each node holds data, a next pointer and a previous pointer, so the list can be traversed in both directions. Supports insertion and deletion at the beginning, end, a position or a value.
 
