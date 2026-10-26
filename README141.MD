@@ -34,7 +34,7 @@ A repository of Data Structures and Algorithms implementations in C++, covering 
 
 ## Experiment 1: Single Linked List
 
-**Code:** [singlelinkedlist.cpp](./01_single_linked_list.cpp)
+**Code:** [singlelinkedlist.cpp](./singlelinkedlist.cpp)
 
 **Description:** A linear data structure in which every node stores data and a pointer to the next node. This program inserts at the head, tail, before a value and after a value, and displays the list.
 
