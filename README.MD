@@ -187,12 +187,12 @@ Test Cases:
 Time Complexity:
 • O(n) for an expression of length n
 Space Complexity: O(n) for the stack in the worst case
-EXPERIMENT 17 
-Read Me
+
+Experiment 17:Binary trees 
 Description: A hierarchical structure in which every node has at most two children (left and right). The tree is built recursively from user input, and the Preorder, Inorder and Postorder traversals are displayed.
 Test Cases
 Test 1 - Input: Root 1, left child 2, right child 3   Output: Preorder: 1 2 3, Inorder: 2 1 3, Postorder: 2 3 1
 Time Complexity: Creation / each traversal: O(n)
 Space Complexity: O(n) for n nodes; O(h) recursion stack, h = height of the tree
-Code
+
 
